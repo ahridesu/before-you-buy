@@ -3,6 +3,8 @@ Neste momento a app já lê os códigos de barras e codigos qr
 
 Tem 2 exemplos funcionais, caso o codigo diga google ou caso diga firefox
 # TODO
+Base De Dados com produtos e imagens de produtos 
+
 Favoritos
 
 Eventualmente ter mais exemplos
