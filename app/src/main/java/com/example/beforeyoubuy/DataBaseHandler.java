@@ -10,6 +10,8 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,9 +25,11 @@ public class DataBaseHandler {
     private ArrayList<Produto> listaDeProdutos;
     private ArrayList<Produto> favoritos;
 
+    private DatabaseReference databaseRealtime;
     private final String INSTANCE_FIREBASE_REALTIME = "https://beforeyoubuy-1a840-default-rtdb.europe-west1.firebasedatabase.app/";
 
-    private DatabaseReference database;
+    private StorageReference storageRef;
+    private final String INSTANCE_FIREBASE_STORAGE = "gs://beforeyoubuy-1a840.appspot.com";
 
     public static DataBaseHandler getInstance(){
         if(INSTANCE == null){ //SINGLETON
@@ -36,9 +40,10 @@ public class DataBaseHandler {
 
     protected DataBaseHandler(){
         listaDeProdutos = new ArrayList<>();
-        this.database = FirebaseDatabase.getInstance(INSTANCE_FIREBASE_REALTIME).getReference();
+        this.databaseRealtime = FirebaseDatabase.getInstance(INSTANCE_FIREBASE_REALTIME).getReference();
+        this.storageRef = FirebaseStorage.getInstance(INSTANCE_FIREBASE_STORAGE).getReference();
         this.favoritos = new ArrayList<>();
-        database.addChildEventListener(new ChildEventListener() {
+        databaseRealtime.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
                 Log.e("Child added", "");
@@ -51,8 +56,7 @@ public class DataBaseHandler {
                         String name = (String) obj.get("name");
                         String value = (String) obj.get("id");
                         int pegadaEcologica = ((Long) obj.get("pegadaEcologica")).intValue();
-                        int imagem = ((Long) obj.get("imagem")).intValue();
-                        Produto produto = new Produto(name, value, pegadaEcologica, imagem);
+                        Produto produto = new Produto(name, value, pegadaEcologica);
                         if(!isFavorite(produto.getName())){
                             favoritos.add(produto);
                             Log.e("Favorito " , "Adicionado");
@@ -82,13 +86,13 @@ public class DataBaseHandler {
             }
         });
         loadProdutos();
-        database.child(REMOVER).setValue(REMOVER);
-        database.child(REMOVER).removeValue();
+        databaseRealtime.child(REMOVER).setValue(REMOVER);
+        databaseRealtime.child(REMOVER).removeValue();
     }
 
     private void loadProdutos() {
-        listaDeProdutos.add(new Produto("Pacote de Leite", "8480017005045", PEGADA_ECOLOGICA, R.drawable.pacote_de_leite));
-        listaDeProdutos.add(new Produto("Mini Oreo", "7622300165628", PEGADA_ECOLOGICA, R.drawable.mini_oreo));
+        listaDeProdutos.add(new Produto("Pacote de Leite", "8480017005045", PEGADA_ECOLOGICA));
+        listaDeProdutos.add(new Produto("Mini Oreo", "7622300165628", PEGADA_ECOLOGICA));
     }
 
     /**
@@ -96,13 +100,12 @@ public class DataBaseHandler {
      * @param nome nome do Produto
      * @param id id do produto
      * @param pegadaEcologica pegada ecologica do produto
-     * @param imagem imagem do produto
      * requires nao seja favorito!
      */
-    public void addFavorite(String nome, String id, int pegadaEcologica, int imagem){
+    public void addFavorite(String nome, String id, int pegadaEcologica){
         Log.e("Adicionado Favorito", nome);
-        favoritos.add(new Produto(nome, id, pegadaEcologica, imagem));
-        database.child(FAVORITO).child(nome).setValue(new Produto(nome, id, pegadaEcologica, imagem));
+        favoritos.add(new Produto(nome, id, pegadaEcologica));
+        databaseRealtime.child(FAVORITO).child(nome).setValue(new Produto(nome, id, pegadaEcologica));
     }
 
     public boolean isFavorite(String favorito) {
@@ -121,7 +124,7 @@ public class DataBaseHandler {
     public void removeFavorite(String nome) {
         if(nome != null) {
             Log.e("Removido Favorito", nome);
-            database.child(FAVORITO).child(nome).removeValue();
+            databaseRealtime.child(FAVORITO).child(nome).removeValue();
             removeProduto(nome);
         }
     }
@@ -138,15 +141,6 @@ public class DataBaseHandler {
                 }
             }
         }
-    }
-
-    public int getImagemProduto(String produto) {
-        for(Produto p : listaDeProdutos){
-            if(produto.equals(p.getId())){
-                return p.getImagem();
-            }
-        }
-        return 0;
     }
 
     public int getPegadaEcologica(String produto){
@@ -171,12 +165,7 @@ public class DataBaseHandler {
         return null;
     }
 
-    public Produto getProduto(String produto) {
-        for(Produto p : listaDeProdutos){
-            if(p.getName().equals(produto)){
-                return p;
-            }
-        }
-        return null;
+    public StorageReference getStorageReference() {
+        return storageRef;
     }
 }

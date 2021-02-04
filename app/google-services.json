@@ -1,13 +1,14 @@
 {
   "project_info": {
     "project_number": "884047277446",
+    "firebase_url": "https://beforeyoubuy-1a840-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "beforeyoubuy-1a840",
     "storage_bucket": "beforeyoubuy-1a840.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:884047277446:android:d8a7f15872b926947cd007",
+        "mobilesdk_app_id": "1:884047277446:android:0627099fbba6dcb77cd007",
         "android_client_info": {
           "package_name": "com.example.beforeyoubuy"
         }

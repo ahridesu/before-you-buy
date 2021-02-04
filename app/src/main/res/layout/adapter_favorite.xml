@@ -22,8 +22,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="0dp"
-                android:contentDescription="@string/todo"
-                android:src="@drawable/icon_seven_up" />
+                android:contentDescription="@string/todo"/>
 
         </LinearLayout>
 
@@ -38,14 +37,12 @@
             <TextView
                 android:id="@+id/nome"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/nome" />
+                android:layout_height="wrap_content"/>
 
             <TextView
                 android:id="@+id/pegada"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/pegada_ecol_gica" />
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
     </LinearLayout>

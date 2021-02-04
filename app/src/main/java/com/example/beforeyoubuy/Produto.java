@@ -8,13 +8,11 @@ public class Produto {
     private int pegadaEcologica;
     private String name;
     private String id;
-    private int imagem;
 
-    public Produto(String name, String id, int pegadaEcologica, int imagem){
+    public Produto(String name, String id, int pegadaEcologica){
         this.name = name;
         this.id = id;
         this.pegadaEcologica = pegadaEcologica;
-        this.imagem = imagem;
     }
 
     public String getName() {
@@ -48,12 +46,7 @@ public class Produto {
         if (o == null || getClass() != o.getClass()) return false;
         Produto produto = (Produto) o;
         return pegadaEcologica == produto.pegadaEcologica &&
-                imagem == produto.imagem &&
                 Objects.equals(name, produto.name) &&
                 Objects.equals(id, produto.id);
-    }
-
-    public int getImagem() {
-        return imagem;
     }
 }

@@ -14,7 +14,6 @@ public class ButtonHandler {
     private String produto;
     private String id;
     private int pegadaEcologica;
-    private int imagem;
 
     public ButtonHandler(Button button, ImageButton imageButton, DataBaseHandler dataBaseHandler){
         this.button = button;
@@ -28,7 +27,7 @@ public class ButtonHandler {
                     dataBaseHandler.removeFavorite(produto);
                     imageButton.setImageResource(R.drawable.pre_favorite);
                 } else {
-                    dataBaseHandler.addFavorite(produto, id, pegadaEcologica, imagem);
+                    dataBaseHandler.addFavorite(produto, id, pegadaEcologica);
                     imageButton.setImageResource(R.drawable.favorite);
                 }
             }
@@ -36,18 +35,21 @@ public class ButtonHandler {
     }
 
     @SuppressLint("ResourceAsColor")
-    public void newProduct(String produto, String id, int pegadaEcologica, int imagem) {
-        button.setBackgroundColor(Color.WHITE);
-        button.setText(produto);
-        button.setVisibility(View.VISIBLE);
+    public void newProduct(String produto, String id, int pegadaEcologica) {
         this.produto = produto;
         this.id = id;
         this.pegadaEcologica = pegadaEcologica;
-        this.imagem = imagem;
+        button.setBackgroundColor(Color.WHITE);
+        button.setText(produto);
+        button.setVisibility(View.VISIBLE);
     }
 
     public void invisible() {
         this.button.setVisibility(View.INVISIBLE);
         this.imageButton.setVisibility(View.INVISIBLE);
+    }
+
+    public Button getButton() {
+        return button;
     }
 }

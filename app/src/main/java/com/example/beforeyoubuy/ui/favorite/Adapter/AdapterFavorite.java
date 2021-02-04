@@ -1,5 +1,9 @@
 package com.example.beforeyoubuy.ui.favorite.Adapter;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,15 +13,24 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.beforeyoubuy.DataBaseHandler;
+import com.example.beforeyoubuy.NewProductScreen;
 import com.example.beforeyoubuy.Produto;
 import com.example.beforeyoubuy.R;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.storage.FileDownloadTask;
+import com.google.firebase.storage.StorageReference;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class AdapterFavorite extends RecyclerView.Adapter<AdapterFavorite.FavoriteViewHolder> {
 
 
     private final ArrayList<Produto> listaDeProdutos;
+    private DataBaseHandler dataBaseHandler;
 
     public AdapterFavorite(ArrayList<Produto> listaDeProdutos) {
         this.listaDeProdutos = listaDeProdutos;
@@ -28,6 +41,7 @@ public class AdapterFavorite extends RecyclerView.Adapter<AdapterFavorite.Favori
     public FavoriteViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemLista = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.adapter_favorite, parent, false);
+        dataBaseHandler = DataBaseHandler.getInstance();
         return new FavoriteViewHolder(itemLista);
     }
 
@@ -38,9 +52,24 @@ public class AdapterFavorite extends RecyclerView.Adapter<AdapterFavorite.Favori
 
     @Override
     public void onBindViewHolder(@NonNull FavoriteViewHolder holder, int position) {
+        StorageReference storageReference = dataBaseHandler.getStorageReference();
+        String nome = listaDeProdutos.get(position).getName();
 
-        holder.setImagem(listaDeProdutos.get(position).getImagem());
-        holder.setNome("Produto: " + listaDeProdutos.get(position).getName());
+        try {
+            File localfile = File.createTempFile(nome, "jpg");
+            storageReference.child("images/" + nome + ".jpg").getFile(localfile)
+                    .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Bitmap bitmap = BitmapFactory.decodeFile(localfile.getAbsolutePath());
+                            holder.setImagem(bitmap);
+                        }
+                    });
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        holder.setNome("Produto: " + nome);
         holder.setPegada(listaDeProdutos.get(position).getPegadaEcologica());
     }
 
@@ -56,8 +85,8 @@ public class AdapterFavorite extends RecyclerView.Adapter<AdapterFavorite.Favori
             this.pegada = itemView.findViewById(R.id.pegada);
         }
 
-        public void setImagem(int imagem) {
-            this.imagem.setImageResource(imagem);
+        public void setImagem(Bitmap imagem) {
+            this.imagem.setImageBitmap(imagem);
         }
 
         public void setNome(String nome) {

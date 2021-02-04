@@ -1,6 +1,9 @@
 package com.example.beforeyoubuy.ui.home;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,8 +23,16 @@ import com.budiyev.android.codescanner.CodeScannerView;
 import com.budiyev.android.codescanner.DecodeCallback;
 import com.example.beforeyoubuy.ButtonHandler;
 import com.example.beforeyoubuy.DataBaseHandler;
+import com.example.beforeyoubuy.NewProductScreen;
 import com.example.beforeyoubuy.R;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.storage.FileDownloadTask;
+import com.google.firebase.storage.StorageReference;
 import com.google.zxing.Result;
+
+import java.io.File;
+import java.io.IOException;
 
 public class HomeFragment extends Fragment {
 
@@ -93,24 +104,46 @@ public class HomeFragment extends Fragment {
 
 
     private void getProduto(String produto) {
-        int imagem = dataBaseHandler.getImagemProduto(produto);
-        Log.e("Imagem: ", imagem + "");
-        if (imagem != 0) { // Imagem == 0 => Não existe produto
-            Log.e("Produto", "Existe");
-            int pegadaEcologica = dataBaseHandler.getPegadaEcologica(produto);
-            String nome = dataBaseHandler.getNomeProduto(produto);
-            imageView.setImageResource(imagem);
-            imageView.setVisibility(View.VISIBLE);
-            imageView.setBackgroundColor(Color.TRANSPARENT);
-            buttonHandler.newProduct(nome, produto, pegadaEcologica, imagem);
-            favorite.setVisibility(View.VISIBLE);
-            if(dataBaseHandler.isFavorite(nome)){
-                favorite.setImageResource(R.drawable.favorite);
-            } else {
-                favorite.setImageResource(R.drawable.pre_favorite);
+        int pegadaEcologica = dataBaseHandler.getPegadaEcologica(produto);
+        String nome = dataBaseHandler.getNomeProduto(produto);
+        if(nome != null){
+            StorageReference storageReference = dataBaseHandler.getStorageReference();
+            try {
+                File localfile = File.createTempFile(nome, "jpg");
+                storageReference.child("images/" + nome + ".jpg").getFile(localfile)
+                        .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                            @Override
+                            public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                                Bitmap bitmap = BitmapFactory.decodeFile(localfile.getAbsolutePath());
+                                imageView.setImageBitmap(bitmap);
+                                imageView.setVisibility(View.VISIBLE);
+                                imageView.setBackgroundColor(Color.TRANSPARENT);
+                                buttonHandler.newProduct(nome, produto, pegadaEcologica);
+                                favorite.setVisibility(View.VISIBLE);
+                                if(dataBaseHandler.isFavorite(nome)){
+                                    favorite.setImageResource(R.drawable.favorite);
+                                } else {
+                                    favorite.setImageResource(R.drawable.pre_favorite);
+                                }
+                            }
+                        });
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         } else {
-            Log.e("Produto", "Não existe");
+            Button button = buttonHandler.getButton();
+            button.setBackgroundColor(Color.WHITE);
+            button.setText("Registe um novo produto");
+            button.setVisibility(View.VISIBLE);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Código para mudar para a futura atividade
+                    Intent i = new Intent(getActivity(), NewProductScreen.class);
+                    startActivity(i);
+                    (getActivity()).overridePendingTransition(0, 0);
+                }
+            });
         }
     }
 
