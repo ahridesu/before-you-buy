@@ -1,4 +1,4 @@
-package com.example.beforeyoubuy;
+package com.example.beforeyoubuy.Handlers;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
@@ -6,21 +6,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.beforeyoubuy.R;
+
 public class ButtonHandler {
+    //Classe para lidar com os botões
+    // O de favorito e o outro que pode ser para ir para o website do produto ou para registar o produto
 
     private Button button;
     private ImageButton imageButton;
-    private DataBaseHandler dataBaseHandler;
     private String produto;
     private String id;
     private int pegadaEcologica;
 
     public ButtonHandler(Button button, ImageButton imageButton, DataBaseHandler dataBaseHandler){
         this.button = button;
-        button.setVisibility(View.INVISIBLE);
         this.imageButton = imageButton;
-        this.dataBaseHandler = dataBaseHandler;
-        imageButton.setOnClickListener(new View.OnClickListener() {
+        imageButton.setOnClickListener(new View.OnClickListener() { //Tira ou remove o produto dos favoritos tendo em conta ele existir ou não
             @Override
             public void onClick(View v) {
                 if(dataBaseHandler.isFavorite(produto)){
@@ -34,7 +35,6 @@ public class ButtonHandler {
         });
     }
 
-    @SuppressLint("ResourceAsColor")
     public void newProduct(String produto, String id, int pegadaEcologica) {
         this.produto = produto;
         this.id = id;
@@ -44,7 +44,7 @@ public class ButtonHandler {
         button.setVisibility(View.VISIBLE);
     }
 
-    public void invisible() {
+    public void invisible() { //Mete os botões invisiveis
         this.button.setVisibility(View.INVISIBLE);
         this.imageButton.setVisibility(View.INVISIBLE);
     }

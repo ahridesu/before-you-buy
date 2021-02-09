@@ -1,9 +1,7 @@
 package com.example.beforeyoubuy.ui.favorite.Adapter;
 
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,11 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.beforeyoubuy.DataBaseHandler;
-import com.example.beforeyoubuy.NewProductScreen;
-import com.example.beforeyoubuy.Produto;
+import com.example.beforeyoubuy.Handlers.DataBaseHandler;
+import com.example.beforeyoubuy.models.Produto;
 import com.example.beforeyoubuy.R;
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.StorageReference;

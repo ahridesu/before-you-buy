@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.example.beforeyoubuy.main.NavigationDrawer;
+
 public class LoadingScreen extends AppCompatActivity {
     private final String[] PERMISSIONS_CAMERA = {Manifest.permission.CAMERA};
     private final int REQUEST_CAMERA = 1;

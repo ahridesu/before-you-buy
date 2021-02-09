@@ -21,11 +21,10 @@ import androidx.fragment.app.Fragment;
 import com.budiyev.android.codescanner.CodeScanner;
 import com.budiyev.android.codescanner.CodeScannerView;
 import com.budiyev.android.codescanner.DecodeCallback;
-import com.example.beforeyoubuy.ButtonHandler;
-import com.example.beforeyoubuy.DataBaseHandler;
+import com.example.beforeyoubuy.Handlers.ButtonHandler;
+import com.example.beforeyoubuy.Handlers.DataBaseHandler;
 import com.example.beforeyoubuy.NewProductScreen;
 import com.example.beforeyoubuy.R;
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.StorageReference;
@@ -64,6 +63,7 @@ public class HomeFragment extends Fragment {
                 activity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+                        //Novo produto detetado
                         Log.e(" New product scanned: ",result.getText());
                         getProduto(result.getText());
                     }
@@ -73,9 +73,9 @@ public class HomeFragment extends Fragment {
         scannerView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Quando se clica após o scan queremos dar reset a isto tudo
                 imageView.setVisibility(View.INVISIBLE);
                 buttonHandler.invisible();
-                favorite.setVisibility(View.INVISIBLE);
                 mCodeScanner.startPreview();
             }
         });
@@ -83,10 +83,11 @@ public class HomeFragment extends Fragment {
     }
 
     private void setUpScanner() {
+        //Definir a imagem os butoes e a base de dados em que vamos mexer mais à frente
         this.favorite = root.findViewById(R.id.favorite);
         this.imageView = root.findViewById(R.id.imageView);
         this.dataBaseHandler = DataBaseHandler.getInstance();
-        button = root.findViewById(R.id.button);
+        this.button = root.findViewById(R.id.button);
         scannerView = root.findViewById(R.id.scanner_view);
         this.buttonHandler = new ButtonHandler(button, favorite, dataBaseHandler);
         buttonHandler.invisible();
@@ -99,30 +100,33 @@ public class HomeFragment extends Fragment {
      */
     private void setUpToolbar() {
         Toolbar toolbar = getActivity().findViewById(R.id.toolbar);
+        //Definir o titulo do fragmento, neste caso é uma string vazia!
         toolbar.setTitle(TITULO);
     }
 
 
     private void getProduto(String produto) {
-        int pegadaEcologica = dataBaseHandler.getPegadaEcologica(produto);
+        //Se o produto existir o nome dele vai existor
         String nome = dataBaseHandler.getNomeProduto(produto);
-        if(nome != null){
+        if(nome != null){ //Caso exista ele tem uma imagem corresponde na base de dados
             StorageReference storageReference = dataBaseHandler.getStorageReference();
             try {
-                File localfile = File.createTempFile(nome, "jpg");
+                File localfile = File.createTempFile(nome, "jpg"); //Vai buscar a imagem desse produto
                 storageReference.child("images/" + nome + ".jpg").getFile(localfile)
                         .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
                             @Override
                             public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                                Bitmap bitmap = BitmapFactory.decodeFile(localfile.getAbsolutePath());
+                                //Vai ser sempre bem sucedido se entrar no if
+                                int pegadaEcologica = dataBaseHandler.getPegadaEcologica(produto);
+                                Bitmap bitmap = BitmapFactory.decodeFile(localfile.getAbsolutePath()); //Passa a imagem para bitmap
                                 imageView.setImageBitmap(bitmap);
                                 imageView.setVisibility(View.VISIBLE);
                                 imageView.setBackgroundColor(Color.TRANSPARENT);
                                 buttonHandler.newProduct(nome, produto, pegadaEcologica);
                                 favorite.setVisibility(View.VISIBLE);
-                                if(dataBaseHandler.isFavorite(nome)){
+                                if(dataBaseHandler.isFavorite(nome)){ //Caso o produto seja um favorito a estrela que aparece é cheia
                                     favorite.setImageResource(R.drawable.favorite);
-                                } else {
+                                } else { //Vazia caso contrário
                                     favorite.setImageResource(R.drawable.pre_favorite);
                                 }
                             }
@@ -130,7 +134,7 @@ public class HomeFragment extends Fragment {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        } else {
+        } else { //Caso o produto não exista
             Button button = buttonHandler.getButton();
             button.setBackgroundColor(Color.WHITE);
             button.setText("Registe um novo produto");
@@ -138,10 +142,11 @@ public class HomeFragment extends Fragment {
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    // Código para mudar para a futura atividade
+                    // Código para mudar para a atividade do novo produto
                     Intent i = new Intent(getActivity(), NewProductScreen.class);
                     startActivity(i);
                     (getActivity()).overridePendingTransition(0, 0);
+
                 }
             });
         }

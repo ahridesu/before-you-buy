@@ -1,13 +1,11 @@
-package com.example.beforeyoubuy;
+package com.example.beforeyoubuy.main;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.Menu;
 import android.widget.Toast;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+import com.example.beforeyoubuy.R;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.navigation.NavController;
@@ -19,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class NavigationDrawer extends AppCompatActivity {
+    // Código feito pelo Android studio quando se cria um Atividade de Navigation Drawer
 
     private AppBarConfiguration mAppBarConfiguration;
 

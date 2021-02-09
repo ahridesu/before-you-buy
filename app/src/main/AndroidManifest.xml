@@ -14,9 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeforeYouBuy">
         <activity
-            android:name=".NavigationDrawer"
+            android:name=".main.NavigationDrawer"
             android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/Theme.BeforeYouBuy.NoActionBar"></activity>
+            android:theme="@style/Theme.BeforeYouBuy.NoActionBar">
+        </activity>
         <activity android:name=".LoadingScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

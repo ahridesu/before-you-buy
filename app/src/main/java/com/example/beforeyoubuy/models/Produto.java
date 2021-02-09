@@ -1,6 +1,4 @@
-package com.example.beforeyoubuy;
-
-import androidx.annotation.Nullable;
+package com.example.beforeyoubuy.models;
 
 import java.util.Objects;
 

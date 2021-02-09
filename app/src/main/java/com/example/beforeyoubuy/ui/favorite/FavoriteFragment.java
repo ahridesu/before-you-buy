@@ -10,8 +10,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.beforeyoubuy.DataBaseHandler;
-import com.example.beforeyoubuy.Produto;
+import com.example.beforeyoubuy.Handlers.DataBaseHandler;
+import com.example.beforeyoubuy.models.Produto;
 import com.example.beforeyoubuy.R;
 import com.example.beforeyoubuy.ui.favorite.Adapter.AdapterFavorite;
 
@@ -31,7 +31,7 @@ public class FavoriteFragment extends Fragment {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
-
+        //Lista de Produtos Favoritos!
         ArrayList<Produto> listaDeProdutos = dataBaseHandler.getFavoritos();
 
         AdapterFavorite adapter = new AdapterFavorite(listaDeProdutos);

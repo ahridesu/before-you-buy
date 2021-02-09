@@ -27,10 +27,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a17e5658-1159-41fc-b0a3-42d3682e91eb" name="Default Changelist" comment="update README.md">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/User.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/NewProductScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_product_screen.xml" afterDir="false" />
+    <list default="true" id="a17e5658-1159-41fc-b0a3-42d3682e91eb" name="Default Changelist" comment="Caso um produto não exista aparece um botão para ele ser registado">
+      <change afterPath="$PROJECT_DIR$/categorias.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -41,46 +39,20 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_exifinterface_exifinterface_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_budiyev_android_code_scanner_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_budiyev_android_code_scanner_2_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_11_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_11_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_17_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_18_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_api_18_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_18_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_impl_18_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_18_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_api_18_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_17_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_18_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_database_19_6_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_database_19_6_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_installations_16_3_5_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_installations_interop_16_0_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_18_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/BeforeYouBuy.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/BeforeYouBuy.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ButtonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ButtonHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/DataBaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/DataBaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ButtonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/ButtonHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/DataBaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/DataBaseHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/LoadingScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/LoadingScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/NavigationDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/main/NavigationDrawer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/NewProductScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/NewProductScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/models/Produto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/favorite/Adapter/AdapterFavorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/favorite/Adapter/AdapterFavorite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/favorite/FavoriteFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/favorite/FavoriteFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/home/HomeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_favorite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_favorite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_product_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_product_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,8 +83,9 @@
         <option value="resourceFile" />
         <option value="valueResourceFile" />
         <option value="layoutResourceFile_vertical" />
-        <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -336,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612234643070</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Caso um produto não exista aparece um botão para ele ser registado">
+      <created>1612414472797</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1612414472797</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -371,7 +351,8 @@
     <MESSAGE value="update 1/02 14:23" />
     <MESSAGE value="update 1/02 21:41" />
     <MESSAGE value="update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
+    <MESSAGE value="Caso um produto não exista aparece um botão para ele ser registado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Caso um produto não exista aparece um botão para ele ser registado" />
   </component>
   <component name="WindowStateProjectService">
     <state x="477" y="266" key="#PSD" timestamp="1612124278493">
@@ -386,10 +367,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609645182381" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1612410002858">
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1612834401575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612410002858" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612834401575" />
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1611248971169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -402,10 +383,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612227936379" />
-    <state x="144" y="83" width="1736" height="856" key="AVDManager" timestamp="1609712723306">
+    <state x="144" y="83" width="1736" height="856" key="AVDManager" timestamp="1612854571844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="144" y="83" width="1736" height="856" key="AVDManager/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609712723306" />
+    <state x="144" y="83" width="1736" height="856" key="AVDManager/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612854571844" />
     <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog" timestamp="1611330838473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -414,14 +395,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="275" key="AndroidCreateResourceFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612408817553" />
-    <state x="804" y="310" key="AndroidCreateXmlResourceDialog" timestamp="1612210020131">
+    <state x="804" y="310" key="AndroidCreateXmlResourceDialog" timestamp="1612836411241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="804" y="310" key="AndroidCreateXmlResourceDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612210020131" />
-    <state x="758" y="266" key="AndroidProcessChooserDialog" timestamp="1612373318174">
+    <state x="804" y="310" key="AndroidCreateXmlResourceDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612836411241" />
+    <state x="758" y="266" key="AndroidProcessChooserDialog" timestamp="1612541440750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="758" y="266" key="AndroidProcessChooserDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612373318174" />
+    <state x="758" y="266" key="AndroidProcessChooserDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612541440750" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1612156401906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -430,26 +411,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612151923643" />
-    <state width="1876" height="147" key="GridCell.Tab.0.bottom" timestamp="1612414243291">
+    <state width="1876" height="147" key="GridCell.Tab.0.bottom" timestamp="1612872112083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="199" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612205783500" />
-    <state width="1876" height="147" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612414243291" />
-    <state width="1876" height="147" key="GridCell.Tab.0.center" timestamp="1612414243291">
+    <state width="1876" height="147" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612674803050" />
+    <state width="1876" height="147" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612872112083" />
+    <state width="1876" height="147" key="GridCell.Tab.0.center" timestamp="1612872112083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="199" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612205783500" />
-    <state width="1876" height="147" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612414243291" />
-    <state width="1876" height="147" key="GridCell.Tab.0.left" timestamp="1612414243291">
+    <state width="1876" height="147" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612674803050" />
+    <state width="1876" height="147" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612872112083" />
+    <state width="1876" height="147" key="GridCell.Tab.0.left" timestamp="1612872112083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="199" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612205783500" />
-    <state width="1876" height="147" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612414243291" />
-    <state width="1876" height="147" key="GridCell.Tab.0.right" timestamp="1612414243291">
+    <state width="1876" height="147" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612674803049" />
+    <state width="1876" height="147" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612872112083" />
+    <state width="1876" height="147" key="GridCell.Tab.0.right" timestamp="1612872112083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="199" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612205783500" />
-    <state width="1876" height="147" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612414243291" />
+    <state width="1876" height="147" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612674803050" />
+    <state width="1876" height="147" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612872112083" />
     <state x="6" y="0" width="1914" height="1040" key="IDE.errors.dialog" timestamp="1609650832366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -458,10 +439,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609644768959" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1612234643962">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1612414474883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612234643962" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612414474883" />
     <state x="776" y="298" key="chooseDestDirectoryDialog" timestamp="1609819641747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

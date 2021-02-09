@@ -8,11 +8,60 @@
     android:background="@color/black">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/cat"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="OLA"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:text="@string/categoria"
+        android:textAlignment="center"
+        android:textColor="#FAFAFA"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/spinnerCat"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/subCat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:text="@string/subCategoria"
+        android:textAlignment="center"
+        android:textColor="#FAFAFA"
+        android:textSize="25sp"
+        android:layout_marginTop="150dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerSubCat"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp" />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:text="@string/nome"
+        android:textAlignment="center"
+        android:textColor="#FAFAFA"
+        android:textSize="25sp"
+        android:layout_marginTop="325dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:ems="10"
+        android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="50sp" />
+        android:autofillHints=""/>
+
 </RelativeLayout>

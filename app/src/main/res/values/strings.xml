@@ -18,4 +18,23 @@
     <string name="todo">TODO</string>
     <string name="nome">Nome</string>
     <string name="pegada_ecol_gica">Pegada Ecológica</string>
+    <string name="categoria">Categoria</string>
+    <string name="subCategoria">Sub Categoria</string>
+
+    <string-array name="categorias">
+        <item>Produtos Lacteos</item>
+        <item>Mercearia Doce</item>
+    </string-array>
+
+    <string-array name="Produtos_Lacteos">
+        <item>Iogurtes</item>
+        <item>Leites Soja Vegetais</item>
+        <item>Ovos</item>
+    </string-array>
+
+    <string-array name="Mercearia_Doce">
+        <item>Cereais e Barras</item>
+        <item>Bolachas e Bolos</item>
+    </string-array>
+
 </resources>
