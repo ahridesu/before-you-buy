@@ -27,8 +27,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a17e5658-1159-41fc-b0a3-42d3682e91eb" name="Default Changelist" comment="Caso um produto não exista aparece um botão para ele ser registado">
-      <change afterPath="$PROJECT_DIR$/categorias.txt" afterDir="false" />
+    <list default="true" id="a17e5658-1159-41fc-b0a3-42d3682e91eb" name="Default Changelist" comment="added more comments to handlers and models&#10;&#10;currently working on further commenting the UI">
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -39,27 +38,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ButtonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/ButtonHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/DataBaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/DataBaseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/LoadingScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/LoadingScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/NavigationDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/main/NavigationDrawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/NewProductScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/NewProductScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/models/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/favorite/Adapter/AdapterFavorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/favorite/Adapter/AdapterFavorite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/favorite/FavoriteFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/favorite/FavoriteFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/home/HomeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_product_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_product_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/ButtonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/ButtonHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/DataBaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/DataBaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/models/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/models/Produto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[R58N61NWCXY]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3a_API_30_x86]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -114,6 +104,7 @@
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -352,7 +343,8 @@
     <MESSAGE value="update 1/02 21:41" />
     <MESSAGE value="update README.md" />
     <MESSAGE value="Caso um produto não exista aparece um botão para ele ser registado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Caso um produto não exista aparece um botão para ele ser registado" />
+    <MESSAGE value="added more comments to handlers and models&#10;&#10;currently working on further commenting the UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="added more comments to handlers and models&#10;&#10;currently working on further commenting the UI" />
   </component>
   <component name="WindowStateProjectService">
     <state x="477" y="266" key="#PSD" timestamp="1612124278493">
@@ -435,10 +427,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="6" y="0" width="1914" height="1040" key="IDE.errors.dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609650832366" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1609644768959">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1612958658858">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609644768959" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612958658858" />
     <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1612414474883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

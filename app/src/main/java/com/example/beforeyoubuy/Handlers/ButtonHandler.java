@@ -12,16 +12,31 @@ public class ButtonHandler {
     //Classe para lidar com os botões
     // O de favorito e o outro que pode ser para ir para o website do produto ou para registar o produto
 
-    private Button button;
-    private ImageButton imageButton;
-    private String produto;
-    private String id;
-    private int pegadaEcologica;
+    //Class to handle the buttons
+    //Handles favorite and ?another? that can redirect to the products website or to register that product
+    //
 
+    private Button button;
+    private ImageButton imageButton; //Add Image Name home in Drawable Folder to customize button image.
+    private String produto; //product name
+    private String id; //product id, barcode code
+    private int pegadaEcologica; //associated ecological footprint
+
+    /**
+     * treats favorites, removing and adding to the database accordingly to the database information
+     *
+     * TODO change if statement at @35 so it does not access database - take current status of button
+     *
+     * @param button- button to handle
+     * @param imageButton - image that customizes button
+     * @param dataBaseHandler - communicates with the database
+     */
     public ButtonHandler(Button button, ImageButton imageButton, DataBaseHandler dataBaseHandler){
         this.button = button;
         this.imageButton = imageButton;
-        imageButton.setOnClickListener(new View.OnClickListener() { //Tira ou remove o produto dos favoritos tendo em conta ele existir ou não
+        //event listener on imageButton or button
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            //Tira ou remove o produto dos favoritos tendo em conta ele existir ou não
             @Override
             public void onClick(View v) {
                 if(dataBaseHandler.isFavorite(produto)){
@@ -35,6 +50,12 @@ public class ButtonHandler {
         });
     }
 
+    /**
+     * creates a product associating name with the respective code and ecological footprint
+     * @param produto - name of the product
+     * @param id - product id - barcode code
+     * @param pegadaEcologica - value of ecological footprint referring to @produto
+     */
     public void newProduct(String produto, String id, int pegadaEcologica) {
         this.produto = produto;
         this.id = id;
@@ -44,11 +65,18 @@ public class ButtonHandler {
         button.setVisibility(View.VISIBLE);
     }
 
+    /**
+     * sets a button, and the respective image view invisible
+     */
     public void invisible() { //Mete os botões invisiveis
         this.button.setVisibility(View.INVISIBLE);
         this.imageButton.setVisibility(View.INVISIBLE);
     }
 
+    /**
+     * returns ?current? @button
+     * @return Button
+     */
     public Button getButton() {
         return button;
     }

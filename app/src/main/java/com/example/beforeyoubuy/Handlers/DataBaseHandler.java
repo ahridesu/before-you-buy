@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 public class DataBaseHandler {
     //link para o firebase https://console.firebase.google.com/u/0/project/beforeyoubuy-1a840/overview
-    // falar com o Ricardo para dar permissões!
+    //falar com o Ricardo para dar permissões!
     //Padrão Singleton! Só há uma instância desta classe
     private static DataBaseHandler INSTANCE = null;
 
