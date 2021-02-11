@@ -1,4 +1,4 @@
-package com.example.beforeyoubuy.ui.home;
+package com.example.beforeyoubuy.ui.scanner;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -33,8 +33,7 @@ import com.google.zxing.Result;
 import java.io.File;
 import java.io.IOException;
 
-public class HomeFragment extends Fragment {
-
+public class ScannerFragment  extends Fragment {
     private final String TITULO = "";
     private CodeScanner mCodeScanner;
     private ImageView imageView;

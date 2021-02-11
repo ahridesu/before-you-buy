@@ -27,29 +27,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a17e5658-1159-41fc-b0a3-42d3682e91eb" name="Default Changelist" comment="added more comments to handlers and models&#10;&#10;currently working on further commenting the UI">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+    <list default="true" id="a17e5658-1159-41fc-b0a3-42d3682e91eb" name="Default Changelist" comment="changed home page&#10;added background to home page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/ButtonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/ButtonHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/DataBaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/DataBaseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/models/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/models/Produto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3a_API_30_x86]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -73,9 +59,9 @@
         <option value="resourceFile" />
         <option value="valueResourceFile" />
         <option value="layoutResourceFile_vertical" />
+        <option value="Enum" />
         <option value="layoutResourceFile" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -108,21 +94,26 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\StudioProjects\before-you-buy\app\src\main\res\drawable" />
       <recent name="D:\Android\AntesDaCompra\app\src\main\res\drawable" />
       <recent name="D:\Android\AntesDaCompra\app\src\main\res\drawable-v24" />
-    </key>
-    <key name="android.template.-1471126695">
-      <recent name="com.example.beforeyoubuy" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.beforeyoubuy" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.beforeyoubuy.ui.favorite.Adapter" />
+    <key name="android.template.-1471126695">
+      <recent name="com.example.beforeyoubuy" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\StudioProjects\before-you-buy\app\src\main\res\drawable" />
       <recent name="D:\Android\AntesDaCompra\app\src\main\res\drawable" />
       <recent name="D:\Android\AntesDaCompra\app\src\main\res\drawable-hdpi" />
+    </key>
+    <key name="android.template.-1552491708">
+      <recent name="com.example.beforeyoubuy" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.beforeyoubuy.ui.favorite.Adapter" />
     </key>
   </component>
   <component name="RunManager">
@@ -307,7 +298,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612414472797</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="changed home page&#10;added background to home page">
+      <created>1613045926592</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1613045926592</updated>
+    </task>
+    <task id="LOCAL-00017" summary="changed home page&#10;added background to home page">
+      <created>1613053188490</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1613053188490</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -344,7 +349,8 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="Caso um produto não exista aparece um botão para ele ser registado" />
     <MESSAGE value="added more comments to handlers and models&#10;&#10;currently working on further commenting the UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more comments to handlers and models&#10;&#10;currently working on further commenting the UI" />
+    <MESSAGE value="changed home page&#10;added background to home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed home page&#10;added background to home page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="477" y="266" key="#PSD" timestamp="1612124278493">
@@ -383,10 +389,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611330838473" />
-    <state x="540" y="275" key="AndroidCreateResourceFileDialog" timestamp="1612408817553">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="384" y="193" key="AndroidCreateResourceFileDialog" timestamp="1613043479658">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="540" y="275" key="AndroidCreateResourceFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612408817553" />
+    <state x="384" y="193" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1613043479658" />
     <state x="804" y="310" key="AndroidCreateXmlResourceDialog" timestamp="1612836411241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -436,10 +443,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612414474883" />
-    <state x="776" y="298" key="chooseDestDirectoryDialog" timestamp="1609819641747">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="552" y="209" key="chooseDestDirectoryDialog" timestamp="1613045671696">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="776" y="298" key="chooseDestDirectoryDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609819641747" />
+    <state x="552" y="209" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1613045671696" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612215849579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
