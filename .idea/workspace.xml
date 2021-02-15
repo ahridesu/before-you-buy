@@ -27,9 +27,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a17e5658-1159-41fc-b0a3-42d3682e91eb" name="Default Changelist" comment="changed home page&#10;added background to home page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a17e5658-1159-41fc-b0a3-42d3682e91eb" name="Default Changelist" comment="changed home page&#10;added background to home page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -312,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613053188490</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="changed home page&#10;added background to home page">
+      <created>1613412443170</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1613412443170</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -389,11 +394,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611330838473" />
-    <state x="384" y="193" key="AndroidCreateResourceFileDialog" timestamp="1613043479658">
+    <state x="384" y="193" key="AndroidCreateResourceFileDialog" timestamp="1613409041041">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="540" y="275" key="AndroidCreateResourceFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612408817553" />
-    <state x="384" y="193" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1613043479658" />
+    <state x="384" y="193" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1613409041041" />
     <state x="804" y="310" key="AndroidCreateXmlResourceDialog" timestamp="1612836411241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -410,26 +415,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612151923643" />
-    <state width="1876" height="147" key="GridCell.Tab.0.bottom" timestamp="1612872112083">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="555" key="GridCell.Tab.0.bottom" timestamp="1613324996836">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1876" height="147" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612674803050" />
     <state width="1876" height="147" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612872112083" />
-    <state width="1876" height="147" key="GridCell.Tab.0.center" timestamp="1612872112083">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="555" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1613324996836" />
+    <state width="1323" height="555" key="GridCell.Tab.0.center" timestamp="1613324996836">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1876" height="147" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612674803050" />
     <state width="1876" height="147" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612872112083" />
-    <state width="1876" height="147" key="GridCell.Tab.0.left" timestamp="1612872112083">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="555" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1613324996836" />
+    <state width="1323" height="555" key="GridCell.Tab.0.left" timestamp="1613324996836">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1876" height="147" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612674803049" />
     <state width="1876" height="147" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612872112083" />
-    <state width="1876" height="147" key="GridCell.Tab.0.right" timestamp="1612872112083">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="555" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1613324996836" />
+    <state width="1323" height="555" key="GridCell.Tab.0.right" timestamp="1613324996836">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1876" height="147" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612674803050" />
     <state width="1876" height="147" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612872112083" />
+    <state width="1323" height="555" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1613324996836" />
+    <state width="1323" height="555" key="GridCell.Tab.1.bottom" timestamp="1613324996837">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="555" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1613324996837" />
+    <state width="1323" height="555" key="GridCell.Tab.1.center" timestamp="1613324996836">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="555" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1613324996836" />
+    <state width="1323" height="555" key="GridCell.Tab.1.left" timestamp="1613324996836">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="555" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1613324996836" />
+    <state width="1323" height="555" key="GridCell.Tab.1.right" timestamp="1613324996837">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="555" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1613324996837" />
     <state x="6" y="0" width="1914" height="1040" key="IDE.errors.dialog" timestamp="1609650832366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

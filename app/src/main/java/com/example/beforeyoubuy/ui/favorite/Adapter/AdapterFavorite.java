@@ -1,4 +1,4 @@
-package com.example.beforeyoubuy.ui.favorite.Adapter;
+package com.example.beforeyoubuy.ui.favorite.adapter;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
