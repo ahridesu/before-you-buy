@@ -13,6 +13,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BeforeYouBuy">
+        <activity android:name=".ui.home.MainActivity"
+            android:label="@string/menu_home"
+            android:theme="@style/Theme.BeforeYouBuy.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name=".ui.favorite.FavoriteActivity">
+        </activity>
+
+        <activity
+            android:name=".ui.scanner.ScannerActivity">
+        </activity>
+
+        <activity
+            android:name=".ui.profile.ProfileActivity">
+        </activity>
+        <activity
+            android:name=".ui.allProducts.AllProductsActivity">
+        </activity>
+
         <activity
             android:name=".main.NavigationDrawer"
             android:label="@string/title_activity_navigation_drawer"

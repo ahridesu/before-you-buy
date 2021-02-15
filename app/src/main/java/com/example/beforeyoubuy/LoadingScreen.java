@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.example.beforeyoubuy.Handlers.DataBaseHandler;
 import com.example.beforeyoubuy.main.NavigationDrawer;
 
 public class LoadingScreen extends AppCompatActivity {
@@ -18,10 +19,12 @@ public class LoadingScreen extends AppCompatActivity {
 
     private final int SPLASH_TIME_OUT = 3000;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         /******************************Verifica Permissões***********************************/
-        verificaPermissoes();
+        verifyPermissions();
 
         /******************************Verifica Permissões***********************************/
         super.onCreate(savedInstanceState);
@@ -33,8 +36,9 @@ public class LoadingScreen extends AppCompatActivity {
             finish();
         }, SPLASH_TIME_OUT);
         /******************************Loading screen****************************************/
+        DataBaseHandler dbHandler = DataBaseHandler.getInstance();
     }
-    private void verificaPermissoes() {
+    private void verifyPermissions() {
         verifyCameraPermissions();
     }
 
