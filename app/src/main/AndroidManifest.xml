@@ -30,9 +30,7 @@
         <activity
             android:name=".ui.profile.ProfileActivity">
         </activity>
-        <activity
-            android:name=".ui.allProducts.AllProductsActivity">
-        </activity>
+
 
         <activity
             android:name=".main.NavigationDrawer"
@@ -47,6 +45,14 @@
         </activity>
         <activity
             android:name=".NewProductScreen">
+        </activity>
+
+        <activity android:name=".ui.allProducts.AllProductsActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@layout/activity_all_products"/>
         </activity>
     </application>
 

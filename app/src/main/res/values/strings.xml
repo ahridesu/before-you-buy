@@ -21,6 +21,7 @@
     <string name="pegada_ecol_gica">Pegada Ecológica</string>
     <string name="categoria">Categoria</string>
     <string name="subCategoria">Sub Categoria</string>
+    <string name="search_hint">Pesquisa produto</string>
 
     <string-array name="categorias">
         <item>Produtos Lacteos</item>
@@ -36,6 +37,11 @@
     <string-array name="Mercearia_Doce">
         <item>Cereais e Barras</item>
         <item>Bolachas e Bolos</item>
+    </string-array>
+
+
+    <string-array name="Localizaçao">
+        <item>Lisboa</item>
     </string-array>
 
 </resources>
