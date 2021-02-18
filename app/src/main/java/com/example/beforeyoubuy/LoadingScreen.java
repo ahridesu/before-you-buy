@@ -11,7 +11,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.example.beforeyoubuy.Handlers.DataBaseHandler;
-import com.example.beforeyoubuy.main.NavigationDrawer;
+import com.example.beforeyoubuy.ui.home.MainActivity;
 
 public class LoadingScreen extends AppCompatActivity {
     private final String[] PERMISSIONS_CAMERA = {Manifest.permission.CAMERA};
@@ -31,7 +31,7 @@ public class LoadingScreen extends AppCompatActivity {
         setContentView(R.layout.activity_loading_screen);
         /******************************Loading screen****************************************/
         new Handler().postDelayed(() -> {
-            Intent loadingScreen = new Intent(LoadingScreen.this, NavigationDrawer.class);
+            Intent loadingScreen = new Intent(LoadingScreen.this, MainActivity.class);
             startActivity(loadingScreen);
             finish();
         }, SPLASH_TIME_OUT);

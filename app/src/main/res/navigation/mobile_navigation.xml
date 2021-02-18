@@ -11,13 +11,13 @@
         android:label="Main"
         tools:layout="@layout/activity_main"/>
 
-    <fragment
+    <activity
         android:id="@+id/nav_scanner"
         android:name="com.example.beforeyoubuy.ui.scanner.ScannerActivity"
         android:label="@string/menu_scanner"
         tools:layout="@layout/activity_scanner" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_gallery"
         android:name="com.example.beforeyoubuy.ui.favorite.FavoriteActivity"
         android:label="@string/menu_favorite"

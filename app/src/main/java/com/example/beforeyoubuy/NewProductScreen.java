@@ -11,6 +11,7 @@ import android.widget.Spinner;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -20,6 +21,7 @@ public class NewProductScreen extends AppCompatActivity {
     private HashMap<String, String[]> categorias;
     private Spinner spinnerCat;
     private Spinner spinnerSubCat;
+    private Spinner location;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -63,6 +65,13 @@ public class NewProductScreen extends AppCompatActivity {
         spinnerSubCat = findViewById(R.id.spinnerSubCat);
 
         spinnerSubCat.setVisibility(View.INVISIBLE);
+
+        location = findViewById(R.id.loc_spin);
+        String[] loc = getResources().getStringArray(R.array.Localizaçao);
+        List<String> localizacao = Arrays.asList(loc);
+        ArrayAdapter<String> locAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,localizacao);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        location.setAdapter(locAdapter);
     }
 
     private void setUpCat() {
