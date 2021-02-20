@@ -1,17 +1,40 @@
 package com.example.beforeyoubuy.models;
 
+import android.media.Image;
+import android.provider.MediaStore;
+
 import java.util.Objects;
 
 public class Produto {
     private int pegadaEcologica; //product's ecological footprint
     private String name; //product's name
     private String id; //product's barcode code
+    private int image;
 
-    public Produto(String name, String id, int pegadaEcologica){
-        this.name = name;
+    public Produto(String id, String name , int pegadaEcologica, int image){
         this.id = id;
+        this.name = name;
         this.pegadaEcologica = pegadaEcologica;
+        this.image = image;
     }
+
+    /**
+     * returns product image
+     * @return product image
+     */
+    public int getImage() {
+        return image;
+    }
+
+
+    /**
+     * changes product image
+     * @param image - new product image
+     */
+    public void setImage(int image) {
+        this.image = image;
+    }
+
 
     /**
      * returns product name

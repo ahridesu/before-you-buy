@@ -102,15 +102,16 @@ public class ScannerActivity extends AppCompatActivity {
     /**
      * Tries to load the product from the database and if successful shows it on the screen
      * If product not on the DB changes view to NewProduct and to insert on the database.
-     * @param product - name of the product on the database
+     * @param id - name of the product on the database
      */
-    private void getProduct(String product){
-        String name = dataBaseHandler.getNomeProduto(product);
+    private void getProduct(String id){
+        String name = dataBaseHandler.getNomeProduto(id);
         //If product exists
         if(name != null){
             StorageReference storageReference = dataBaseHandler.getStorageReference();
             try {
                 //Loads information related to the product
+                //TODO create local file once the picture is taken and upload to the database is successful
                 File localfile = File.createTempFile(name, "jpg"); //Gets the images
                 storageReference.child("images/" + name + ".jpg").getFile(localfile)
                         .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
@@ -118,14 +119,14 @@ public class ScannerActivity extends AppCompatActivity {
                             public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
                                 //Always successful if enters the if-case
                                 //Gets the pegadaEcologica of the product
-                                int pegadaEcologica = dataBaseHandler.getPegadaEcologica(product);
+                                int pegadaEcologica = dataBaseHandler.getPegadaEcologica(id);
                                 //Bitmaps the image of the product
                                 Bitmap bitmap = BitmapFactory.decodeFile(localfile.getAbsolutePath());
                                 //Shows the information on the screen
                                 imageView.setImageBitmap(bitmap);
                                 imageView.setVisibility(View.VISIBLE);
                                 imageView.setBackgroundColor(Color.TRANSPARENT);
-                                buttonHandler.newProduct(name, product, pegadaEcologica);
+                                buttonHandler.newProduct(id, name, pegadaEcologica, 0);
                                 favorite.setVisibility(View.VISIBLE);
                                 //If product is favorite
                                 if(dataBaseHandler.isFavorite(name)){

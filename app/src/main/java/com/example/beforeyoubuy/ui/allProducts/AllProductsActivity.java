@@ -47,7 +47,7 @@ public class AllProductsActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
 
-        itAdap = new ItemAdapter(dbHandler.getFavoritos(), dbHandler.getFavoritos(), this);
+        itAdap = new ItemAdapter(dbHandler.getFavoritos(), this);
         Log.e("Item adapter", itAdap.toString());
         listView.setAdapter(itAdap);
     }
@@ -89,9 +89,9 @@ public class AllProductsActivity extends AppCompatActivity {
         private List<Produto> filteredProductList;
         private Context context;
 
-        public ItemAdapter(List<Produto> products, List<Produto> filteredProducts, Context context) {
+        public ItemAdapter(List<Produto> products, Context context) {
             this.productsList = products;
-            this.filteredProductList = filteredProducts;
+            this.filteredProductList = products;
             this.context = context;
         }
 
@@ -118,9 +118,10 @@ public class AllProductsActivity extends AppCompatActivity {
             TextView name = view.findViewById(R.id.item_name);
             TextView dsc = view.findViewById(R.id.item_dsc);
 
-            img.setImageResource(R.drawable.mini_oreo);//TODO: https://prnt.sc/zzx22p
-            name.setText("name");
-            dsc.setText("dsc");
+            img.setImageResource(productsList.get(position).getImage());//TODO: https://prnt.sc/zzx22p
+            name.setText(productsList.get(position).getName());
+            dsc.setText("IT DOES NOT MATTER");
+            //dsc.setText("dsc");
             return view;
         }
 
@@ -135,9 +136,9 @@ public class AllProductsActivity extends AppCompatActivity {
                         fr.count = productsList.size();
                         fr.values = productsList;
                     }else{
-                        String searchStr =  constraint.toString().toLowerCase();
+                        String searchStr =  constraint.toString();
                         List<Produto> results = new ArrayList<Produto>();
-                        for(Produto product: productsList){
+                        for(Produto product: filteredProductList){
                             results.add(product);
                         }
 

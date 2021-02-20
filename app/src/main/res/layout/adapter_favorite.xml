@@ -5,7 +5,7 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:baselineAligned="false"
         android:orientation="horizontal"
@@ -21,17 +21,17 @@
                 android:id="@+id/icon"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginStart="0dp"
+                android:layout_marginStart="20dp"
                 android:contentDescription="@string/todo"/>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:gravity="center"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="20dp"
             android:orientation="vertical">
 
             <TextView

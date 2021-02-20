@@ -1,10 +1,12 @@
 package com.example.beforeyoubuy.Handlers;
 
+import android.media.Image;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.beforeyoubuy.R;
 import com.example.beforeyoubuy.models.Produto;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -23,7 +25,7 @@ public class DataBaseHandler {
     private static DataBaseHandler INSTANCE = null;
 
     private final String REMOVER = "remover";
-    private final int PEGADA_ECOLOGICA = 0;
+    private final int ECOLOGICAL_FOOTPRINT = 0;
     private final String FAVORITO = "favoritos";
     private ArrayList<Produto> listaDeProdutos;
     private ArrayList<Produto> favoritos;
@@ -58,14 +60,18 @@ public class DataBaseHandler {
                     Log.e("DataSnapShot key", key.toString());
                     //Para cada favorito que exista é na verdade um hashmap porque é um produto e tem varios atributos
                     for(Object s : key.keySet()){
-                        HashMap obj = (HashMap) key.get(s);
-                        Log.e("Obj", obj.toString());
-                        String name = (String) obj.get("name");
-                        String value = (String) obj.get("id");
-                        int pegadaEcologica = ((Long) obj.get("pegadaEcologica")).intValue();
+                        HashMap product = (HashMap) key.get(s);
+                        Log.e("Obj", product.toString());
+
+                        String id = (String) product.get("id");
+                        String name = (String) product.get("name");
+                        //TODO check what is Long doing here
+                        int ecologicalFootprint = ((Long) product.get("pegadaEcologica")).intValue();
+                        //int image = (int) product.get("image");
+
                         //criar o produto com o que foi recolhido na base de dados
-                        Produto produto = new Produto(name, value, pegadaEcologica);
-                        //Verificar se ele já está na lista de favoritos, porque isto pode ser chamado vai vezes desnecessariamente
+                        Produto produto = new Produto(id, name, ecologicalFootprint, 0);
+                        //Verificar se ele já está na lista de favoritos, porque isto pode ser chamado varias vezes desnecessariamente
                         if(!isFavorite(produto.getName())){
                             favoritos.add(produto);
                             Log.e("Favorito " , "Adicionado");
@@ -101,22 +107,23 @@ public class DataBaseHandler {
     }
 
     private void loadProdutos() {
+        //TODO dynamic
         //De momento isto está assim porque são poucos produtos mas no futuro vai estar na base de dados
-        listaDeProdutos.add(new Produto("Pacote de Leite", "8480017005045", PEGADA_ECOLOGICA));
-        listaDeProdutos.add(new Produto("Mini Oreo", "7622300165628", PEGADA_ECOLOGICA));
+        listaDeProdutos.add(new Produto("8480017005045", "Pacote de Leite", ECOLOGICAL_FOOTPRINT, R.drawable.pacote_de_leite));
+        listaDeProdutos.add(new Produto("7622300165628", "Mini Oreo", ECOLOGICAL_FOOTPRINT, R.drawable.mini_oreo));
     }
 
     /**
      * Adiciiona um produto
-     * @param nome nome do Produto
+     * @param name nome do Produto
      * @param id id do produto
      * @param pegadaEcologica pegada ecologica do produto
      * requires nao seja favorito!
      */
-    public void addFavorite(String nome, String id, int pegadaEcologica){
-        Log.e("Adicionado Favorito", nome);
-        favoritos.add(new Produto(nome, id, pegadaEcologica));
-        databaseRealtime.child(FAVORITO).child(nome).setValue(new Produto(nome, id, pegadaEcologica));
+    public void addFavorite(String id, String name, int pegadaEcologica, int image){
+        Log.e("Adicionado Favorito", name);
+        favoritos.add(new Produto(id, name, pegadaEcologica,image));
+        databaseRealtime.child(FAVORITO).child(id).setValue(new Produto(id, name, pegadaEcologica,image));
     }
 
     /**
@@ -179,8 +186,10 @@ public class DataBaseHandler {
                 return p.getPegadaEcologica();
             }
         }
-        return 0;
+        return -1;
     }
+
+
 
     /**
      * Devolve a lista de favoritos

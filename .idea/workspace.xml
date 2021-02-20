@@ -28,8 +28,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a17e5658-1159-41fc-b0a3-42d3682e91eb" name="Default Changelist" comment="changed home page&#10;added background to home page">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_items.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/achiev_repeat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/achiev_start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/barra_de_baixo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/barra_de_pesquisa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/border.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/edit_profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_black.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_casa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_estrela.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_perfil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lupa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/taca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/test.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tiago.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -41,21 +58,26 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/BeforeYouBuy.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/BeforeYouBuy.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/LoadingScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/LoadingScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/NewProductScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/NewProductScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/main/NavigationDrawer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/ButtonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/ButtonHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/DataBaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/Handlers/DataBaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/models/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/models/Produto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/allProducts/AllProductsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/allProducts/AllProductsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/home/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/home/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/scanner/ScannerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/beforeyoubuy/ui/scanner/ScannerActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_all_products.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_all_products.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_favorite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_favorite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_navigation_drawer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_product_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_product_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_favorite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_favorite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +143,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\acr\StudioProjects\before-you-buy\app\src\main\res\drawable" />
       <recent name="C:\Users\User\StudioProjects\before-you-buy\app\src\main\res\drawable" />
       <recent name="D:\Android\AntesDaCompra\app\src\main\res\drawable" />
       <recent name="D:\Android\AntesDaCompra\app\src\main\res\drawable-v24" />
@@ -412,11 +435,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="743" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612408779514" />
-    <state x="491" y="187" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613660869983">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="578" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1613666713740">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="578" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613666713740" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613748604255">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612227936379" />
     <state x="491" y="187" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1613660869983" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613748604255" />
     <state x="144" y="83" width="1736" height="856" key="AVDManager" timestamp="1612854571844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -446,46 +474,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612151923643" />
-    <state width="1323" height="555" key="GridCell.Tab.0.bottom" timestamp="1613660988100">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="938" height="281" key="GridCell.Tab.0.bottom" timestamp="1613750869728">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="147" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612674803050" />
     <state width="1876" height="147" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612872112083" />
-    <state width="1323" height="555" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1613660988100" />
-    <state width="1323" height="555" key="GridCell.Tab.0.center" timestamp="1613660988100">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1323" height="555" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1613671539964" />
+    <state width="938" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613750869728" />
+    <state width="938" height="281" key="GridCell.Tab.0.center" timestamp="1613750869728">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="147" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612674803050" />
     <state width="1876" height="147" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612872112083" />
-    <state width="1323" height="555" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1613660988100" />
-    <state width="1323" height="555" key="GridCell.Tab.0.left" timestamp="1613660988100">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1323" height="555" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1613671539964" />
+    <state width="938" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613750869728" />
+    <state width="938" height="281" key="GridCell.Tab.0.left" timestamp="1613750869728">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="147" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612674803049" />
     <state width="1876" height="147" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612872112083" />
-    <state width="1323" height="555" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1613660988100" />
-    <state width="1323" height="555" key="GridCell.Tab.0.right" timestamp="1613660988100">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1323" height="555" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1613671539963" />
+    <state width="938" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613750869728" />
+    <state width="938" height="281" key="GridCell.Tab.0.right" timestamp="1613750869728">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="147" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1612674803050" />
     <state width="1876" height="147" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612872112083" />
-    <state width="1323" height="555" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1613660988100" />
-    <state width="1323" height="555" key="GridCell.Tab.1.bottom" timestamp="1613660988101">
+    <state width="1323" height="555" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1613671539964" />
+    <state width="938" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613750869728" />
+    <state width="1323" height="555" key="GridCell.Tab.1.bottom" timestamp="1613671539964">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="555" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1613660988101" />
-    <state width="1323" height="555" key="GridCell.Tab.1.center" timestamp="1613660988101">
+    <state width="1323" height="555" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1613671539964" />
+    <state width="1323" height="555" key="GridCell.Tab.1.center" timestamp="1613671539964">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="555" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1613660988101" />
-    <state width="1323" height="555" key="GridCell.Tab.1.left" timestamp="1613660988100">
+    <state width="1323" height="555" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1613671539964" />
+    <state width="1323" height="555" key="GridCell.Tab.1.left" timestamp="1613671539964">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="555" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1613660988100" />
-    <state width="1323" height="555" key="GridCell.Tab.1.right" timestamp="1613660988101">
+    <state width="1323" height="555" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1613671539964" />
+    <state width="1323" height="555" key="GridCell.Tab.1.right" timestamp="1613671539964">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="555" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1613660988101" />
+    <state width="1323" height="555" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1613671539964" />
     <state x="6" y="0" width="1914" height="1040" key="IDE.errors.dialog" timestamp="1609650832366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -499,11 +531,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612414474883" />
-    <state x="552" y="209" key="chooseDestDirectoryDialog" timestamp="1613045671696">
+    <state x="552" y="209" key="chooseDestDirectoryDialog" timestamp="1613670623365">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="776" y="298" key="chooseDestDirectoryDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609819641747" />
-    <state x="552" y="209" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1613045671696" />
+    <state x="552" y="209" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1613670623365" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612215849579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

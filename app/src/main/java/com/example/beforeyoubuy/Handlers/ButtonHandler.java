@@ -2,6 +2,7 @@ package com.example.beforeyoubuy.Handlers;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
+import android.media.Image;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -20,6 +21,7 @@ public class ButtonHandler {
     private ImageButton imageButton; //Add Image Name home in Drawable Folder to customize button image.
     private String produto; //product name
     private String id; //product id, barcode code
+    private int image; //product image
     private int pegadaEcologica; //associated ecological footprint
 
     /**
@@ -43,7 +45,7 @@ public class ButtonHandler {
                     dataBaseHandler.removeFavorite(produto);
                     imageButton.setImageResource(R.drawable.pre_favorite);
                 } else {
-                    dataBaseHandler.addFavorite(produto, id, pegadaEcologica);
+                    dataBaseHandler.addFavorite(id, produto, pegadaEcologica, image);
                     imageButton.setImageResource(R.drawable.favorite);
                 }
             }
@@ -56,10 +58,11 @@ public class ButtonHandler {
      * @param id - product id - barcode code
      * @param pegadaEcologica - value of ecological footprint referring to @produto
      */
-    public void newProduct(String produto, String id, int pegadaEcologica) {
+    public void newProduct(String id, String produto, int pegadaEcologica, int image) {
         this.produto = produto;
         this.id = id;
         this.pegadaEcologica = pegadaEcologica;
+        this.image = image;
         button.setBackgroundColor(Color.WHITE);
         button.setText(produto);
         button.setVisibility(View.VISIBLE);

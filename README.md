@@ -9,19 +9,21 @@ Interface de Utilizador a funcionar com um loading screen, home page e menus de 
 
 Tem 2 exemplos funcionais, os codigos de barras encontram-se na pasta ImagensQRCode
 # TODO
-Criar menu de perfil do utilizador.
+Criar menu de perfil do utilizador (perfil genérico neste momento, sendo mais tarde especifico a cada utilizador).
 
-Modificar a base de dados para que o produto seja adicionado pelo id e não pelo nome e incluir a imagem do produto nos dados.
+Modificar a base de dados para incluir a imagem do produto nos dados que são obtidos.
 
-Criar getter para todos os produtos na base de dados.
+Criar getter para todos os produtos na base de dados neste momento só existe nos favoritos.
 
-Pôr o menu de pesquisa de todos os produtos a funcionar corretamente.
+Pôr o menu de pesquisa de todos os produtos a funcionar corretamente (falta criar uma forma de filtrar produtos).
 
 Criar um botão no menu scanner que quando um produto é scanneado pode levar a uma página que mostra os dados completos do produto.
 
-Criar mais exemplos se necessário.
+Alterar o layout do scanner de forma a que a camara ocupe mais espaço do ecrã e apenas a parte inferior do ecrã fique disponível para as informações do produto.
 
-Retirar os 3 pontos no canto superior direito do ecrã.
+Criar mais exemplos se necessário (minimo 3).
+
+Criar uma barra para todos os menus que identifique a atividade (exceto scanner).
 
 Criar forma de autenticação do utilizador.
 # Como correr a App
